@@ -1,0 +1,29 @@
+{
+  "name": "dsv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "prettier:check": "prettier . --check --ignore-unknown",
+    "prettier:fix": "prettier . --check --ignore-unknown --write",
+    "test": "npx playwright test",
+    "test:api": "npx playwright test --project=api",
+    "test:ui": "npx playwright test --project=ui"
+  },
+  "keywords": [],
+  "author": "Oleksandr Obelets git:alexobelets",
+  "license": "ISC",
+  "description": "End-to-end UI tests for Booking Flights feature using Playwright and TypeScript",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.8",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}
